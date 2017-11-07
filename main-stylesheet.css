@@ -487,6 +487,9 @@ h2 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 margin: 20px 5px;
+	max-width: 800px;
+margin-right: auto;
+margin-left: auto;
 }
 .time-remaining {
 	text-align: center;
