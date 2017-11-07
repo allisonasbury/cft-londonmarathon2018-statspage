@@ -661,6 +661,7 @@ height: 100%;
 }
 	 .logo {
     width: 75%;
+		 text-align: center;
 }
 .navbar-toggle.collapsed {
     width: 20%;
@@ -1748,8 +1749,11 @@ display: none;
 }
 	 
 	 .logo img {
-    width: auto; 
-    height: auto;
+  width: auto;
+height: auto;
+max-width: 300px;
+margin-right: auto;
+margin-left: auto;
 }
 	
 	 .leaderboard .col-md-2 {
