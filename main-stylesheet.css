@@ -1,0 +1,1739 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+@font-face {
+    font-family: 'cf_scriptregular';
+    src: url('../fonts/cfscript-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ===================
+    general styles
+======================*/
+
+body {
+	font-size: 2em;
+	color: #000;
+	overflow-x: hidden;
+}
+
+p {
+	
+}
+
+a {
+	color: #16335a;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 72px;
+}
+
+h2 {
+	margin-bottom: 30px;
+	margin-top:40px;
+}
+
+h3 {
+	
+}
+
+h4 {
+	font-size: 24px;
+}
+
+.padding {
+	padding: 20px 40px;
+}
+
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn {
+	
+}
+
+/* buttons */
+.supporter-info {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.hero-box {
+	display:flex;
+	margin-top:185px;
+}
+.user-photo {
+    margin-top: 50px;
+}
+.video {
+	width: 66.66%;
+	background-image: url(../images/cloud-bkgrnd.jpg);
+	background-size: cover;
+	background-position: center;
+		margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+.user-profile {
+	background-color: #F0F0F0;
+	text-align:center;
+}
+.video-box {
+	padding: 50px; 
+}
+.video-box iframe {
+	border: 6px solid #000;
+}
+.user-profile {
+	width: 33.33%;
+}
+.btn-primary,
+.btn-default {
+    color: #000;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.jumbotron .btn {
+
+}
+
+.jumbotron .btn-primary,
+#intro .btn-default,
+#josh .btn-default,
+#thankyou .btn-default,
+.supporterwall .btn-default {
+    color: #fff;
+		background-image: url(../images/banner_buttontransp.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	    background-size: 95%;
+    width: 300px;
+    font-size: 0.8em;
+	line-height: 1.6em;
+	border: none;
+}
+
+.jumbotron .btn-primary:hover,
+#intro .btn-default:hover,
+#josh .btn-default:hover,
+#thankyou .btn-default:hover {
+    color: #000;
+	background-color: transparent;
+	border: none;
+	font-size: 0.8em;
+	
+}
+
+
+#intro .btn-default,
+#josh .btn-default,
+#thankyou .btn-default{
+		background-image: url(../images/intro_buttontransp.png);
+	line-height: 2.7em;
+    font-size: 1em;
+	color: #000;
+}
+
+#intro .btn-default:hover,
+#josh .btn-default:hover,
+#thankyou .btn-default:hover{
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#intro .buttonorange {
+	background-image: url(../images/intro_buttonorange.png);
+	color: #fff;
+}
+
+.btn-default.focus,.btn-default:focus {
+	color:#000;
+	background-color:transparent;
+	border-color:transparent;
+}
+
+
+
+
+/* ===================
+    header
+======================*/
+
+.navbar-inverse {
+	background-color: #fff;
+	border-color: transparent;
+}
+.navbar-header {
+    display: flex;
+    justify-content: center;
+    min-height: 160px;
+	width:70%;
+}
+.container.nav {
+	display: flex;
+	justify-content: space-between;
+}
+#navbar {
+width:30%;
+	align-self: center;
+}
+.logo {
+	width:30%;
+}
+.logo img {
+    width: 90%;
+    height: auto;
+    padding: 20px 0px;
+}
+.VLM {
+    align-self: center;
+	font-size:30px;
+	width:70%;
+	text-align:center;
+}
+.navbar {
+min-height: 160px;
+}
+
+#navbar ul {
+	padding-left: 0;
+	margin-top: 60px;
+}
+
+#navbar ul li {
+	list-style-type: none;
+	margin-right: 20px;
+	display: inline-block;
+}
+
+#navbar ul li a {
+	text-align: center;
+	padding: 25px;
+
+}
+
+#navbar ul li a.mainbutton {
+background-image: url(../images/header_buttontransp.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+		width: 230px;
+    display: block;
+}
+
+#navbar ul li a.mainbuttonorange {
+background-image: url(../images/header_buttonorange.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	color: #fff;
+		width: 230px;
+    display: block;
+}
+
+#navbar ul li a:hover {
+color: #000;
+font-weight: bold;
+}
+
+#navbar ul li a.mainbuttonorange:hover {
+	color: #fff;
+}
+
+#navbar a i.fa {
+	color: #000 !important;
+}
+
+#navbar a i.fa:hover {
+	color: #43b8bd !important;
+}
+
+#navbar a.icon {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/* ===================
+    banner
+======================*/
+
+.jumbotron {
+	margin-top: 170px;
+	background-image: url(../images/banner_background.png);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+    color: #fff;
+	margin-bottom: 0px;
+}
+
+.jumbotron p {
+    font-size: 30px;
+	font-weight: bold;
+	-moz-text-shadow:5px 5px 5px rgba(0,0,0,0.1);
+-webkit-text-shadow:5px 5px 5px rgba(0,0,0,0.1);
+text-shadow:5px 5px 5px rgba(0,0,0,0.1);
+}
+
+.jumbotron h1 {
+-moz-text-shadow:5px 5px 5px rgba(0,0,0,0.1);
+-webkit-text-shadow:5px 5px 5px rgba(0,0,0,0.1);
+text-shadow:5px 5px 5px rgba(0,0,0,0.1);
+}
+
+.jumbotron .btn-primary {
+    color: #000;
+		background-image: url(../images/header_buttonwhite.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	    background-size: 95%;
+    width: 300px;
+    font-size: 0.8em;
+	line-height: 1.6em;
+	border: none;
+}
+
+.jumbotron .btn-primary:hover {
+    color: #000;
+	background-color: transparent;
+	border: none;
+	font-size: 0.8em;font-weight: bold;
+	
+}
+
+.btn-primary.focus,.btn-primary:focus {
+	color:#000;
+	background-color:transparent;
+	border-color:transparent;
+}
+
+
+/* ===================
+    totals
+======================*/
+.icon {
+   color: #111;
+background-color: #ffcc00;
+border-radius: 50%;
+margin: 30px;
+padding: 20px 25px;
+font-size: 40px;
+}
+.social {
+	display:inline;
+}
+.box.time h2 {
+	margin-top:50px;
+}
+#totals {
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	background-color: #16335A;
+}
+.badges img {
+	max-width: 150px;
+}
+.box {
+    width: 33.33%;
+}
+#totals .raised,
+#totals .time,
+#totals .participants {
+	padding: 30px 0;
+}
+
+#totals .raised {
+	background-color: #ffce16;
+}
+
+#totals .raisedamount {
+	
+}
+
+#totals .time {
+	background-color: #16335a;
+	color: #fff;
+	align-self: center;
+}
+
+#totals .timeamount {
+	background-color: #16335a;
+	color: #fff;
+}
+
+#totals .participants {
+	background-color: #43b8bd;
+}
+
+#totals .participantsamount {
+	background-color: #43b8bd;
+}
+
+
+#totals .raisedamount,
+#totals .timeamount,
+#totals .distanceamount {
+	font-family: 'cf_scriptregular', sans-serif;
+	font-size: 1.8em;
+}
+h2 {
+	font-family: 'cf_scriptregular', sans-serif;
+    font-size: 40px;
+}
+.next-amount {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+}
+.next-distance {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+}
+.badges {
+    margin-bottom: 20px;
+}
+/* ===================
+    intro
+======================*/
+
+#intro {
+    display: flex;
+	text-align:center;
+}
+.intro-box {
+	width:50%;
+	min-height: 500px;
+}
+#intro .text {
+	background-color: #43b8bd;
+}
+
+#intro .actions {
+	background-color: #ffce16;
+}
+
+#intro .actionbuttons {
+	
+}
+
+#intro .actionbuttons ul {
+	padding-left: 0px;
+}
+
+#intro .actionbuttons ul li {
+	list-style-type: none;
+	margin: 40px 0;
+}
+
+
+/* badges */
+.badges-earned {
+    display: flex;
+    justify-content: space-between;
+	flex-wrap:wrap;
+	margin: 20px 40px;
+}
+.time-remaining {
+	text-align: center;
+}
+.badge-box img {
+	width: 100%;
+}
+.badge-box {
+   width: 135px;
+margin: 10px 15px;
+min-width: 100px;
+height: 135px;
+}
+.distance-silver {
+	background-image: url(../images/distance-badges/distance-silver-grey.png);
+	background-size: 100%;
+}
+.distance-bronze {
+	background-image: url(../images/distance-badges/distance-bronze-grey.png);
+	background-size: 100%;
+}
+.distance-gold {
+	background-image: url(../images/distance-badges/distance-gold-grey.png);
+	background-size: 100%;
+}
+.distance-platinum {
+	background-image: url(../images/distance-badges/distance-platinum-grey.png);
+	background-size: 100%;
+}
+.fundraising-50 {
+	background-image: url(../images/fundraising-badges/fundraising-50-grey.png);
+	background-size: 100%;
+}
+.fundraising-250 {
+	background-image: url(../images/fundraising-badges/fundraising-250-grey.png);
+	background-size: 100%;
+}
+.fundraising-750 {
+	background-image: url(../images/fundraising-badges/fundraising-750-grey.png);
+	background-size: 100%;
+}
+.fundraising-1250 {
+	background-image: url(../images/fundraising-badges/fundraising-1250-grey.png);
+	background-size: 100%;
+}
+.fundraising-2000 {
+	background-image: url(../images/fundraising-badges/fundraising-2000-grey.png);
+	background-size: 100%;
+}
+.fundraising-2500 {
+	background-image: url(../images/fundraising-badges/fundraising-2500-grey.png);
+	background-size: 100%;
+}
+
+
+.distance-silver.active {
+	background-image: url(../images/distance-badges/distance-silver.png);
+	background-size: 100%;
+}
+.distance-bronze.active {
+	background-image: url(../images/distance-badges/distance-bronze.png);
+	background-size: 100%;
+}
+.distance-gold.active {
+	background-image: url(../images/distance-badges/distance-gold.png);
+	background-size: 100%;
+}
+.distance-platinum.active {
+	background-image: url(../images/distance-badges/distance-platinum.png);
+	background-size: 100%;
+}
+.fundraising-50.active {
+	background-image: url(../images/fundraising-badges/fundraising-50.png);
+	background-size: 100%;
+}
+.fundraising-250.active {
+	background-image: url(../images/fundraising-badges/fundraising-250.png);
+	background-size: 100%;
+}
+.fundraising-750.active {
+	background-image: url(../images/fundraising-badges/fundraising-750.png);
+	background-size: 100%;
+}
+.fundraising-1250.active {
+	background-image: url(../images/fundraising-badges/fundraising-1250.png);
+	background-size: 100%;
+}
+.fundraising-2000.active {
+	background-image: url(../images/fundraising-badges/fundraising-2000.png);
+	background-size: 100%;
+}
+.fundraising-2500.active {
+	background-image: url(../images/fundraising-badges/fundraising-2500.png);
+	background-size: 100%;
+}
+
+
+.user-profile img {
+	max-width: 250px;
+border: 6px solid #000;
+}
+a.mainbuttonorange {
+    background-image: url(../images/header_buttonorange.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    color: #fff;
+    width: 230px;
+    display: block;
+	padding: 25px;
+	margin-right: auto;
+margin-left: auto;
+}
+a.profile {
+	margin-top:20px;
+	margin-bottom:40px;
+}
+ @media(max-width:1000px) {
+	#intro {
+    flex-wrap:wrap;
+} 
+	 .VLM h2 {
+    margin-bottom: 10px;
+    margin-top: 0px;
+		 font-size:24px;
+}
+	 .cloud img {
+		 width: 90%;
+	 }
+	 .video {
+    width: 100%;
+	 }
+	 .user-profile {
+    width: 100%;
+}
+	 .myIframe {
+position: relative;
+padding-bottom: 65.25%;
+padding-top: 30px;
+height: 0;
+overflow: auto;
+-webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY
+border: solid black 1px;
+}
+.myIframe iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+	 .hero-box {
+   flex-wrap:wrap;
+}
+	 .navbar-header {
+    flex-wrap:wrap;
+		 width:100%;
+}
+	 .logo {
+    width: 75%;
+}
+.navbar-toggle.collapsed {
+    width: 20%;
+    align-items: flex-end;
+}
+.container.nav {
+   flex-wrap:wrap;
+}
+	 #navbar {
+    width: 100%;
+}
+	 .intro-box {
+    width:100%;
+}
+	 #totals {
+	flex-wrap:wrap;
+}
+
+.box {
+    width: 100%;
+}
+}
+
+/* boxes */
+
+.boxcontainer {
+	padding: 20px;
+}
+
+.boxcontainer .box {
+	border: 1px solid #000;
+	font-size: 0.7em;
+	min-height: 140px;
+}
+
+.boxcontainer .box .col-md-6,
+.boxcontainer .box .col-md-3,
+.boxcontainer .box .col-md-12{
+	padding: 0px;
+}
+
+.Overlay {
+	z-index: 1500 !important;
+}
+
+
+#intro .boxcontainer .number {
+	background-color: #16335a;
+	color: #fff;
+	padding: 20px 0 0 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.7em;
+    line-height: 0;
+	margin-left: -15px;
+}
+
+#intro .boxcontainer .register {
+	background-image: url(../images/intro_phone.png);
+	background-position: 90% 10px;
+	background-repeat: no-repeat;
+}
+
+#intro .boxcontainer .text {
+	margin-top: 15px;
+	background-color: transparent;
+}
+
+#intro .boxcontainer .active {
+		background-image: url(../images/intro_shoe.png);
+	background-position: 90% 10px;
+	background-repeat: no-repeat;
+}
+
+#intro .boxcontainer .active .text {
+margin-top: 45px;
+}
+
+#intro .boxcontainer .log {
+		background-image: url(../images/intro_clock.png);
+	background-position: 90% 10px;
+	background-repeat: no-repeat;
+}
+
+#intro .boxcontainer .fundraise {
+		background-image: url(../images/intro_wallet.png);
+	background-position: 90% 10px;
+	background-repeat: no-repeat;
+}
+
+
+
+/* widget */
+
+#intro .widget {
+	background-image: url(../images/intro_verticalline.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+
+#intro .widget .btn-default {
+		background-image: none;
+	line-height: 0em;
+    font-size: 1em;
+	color: #000;
+	width: 50px;
+	background-color: #e7b701;
+	border-radius: 0;
+	margin-left: -6px;
+}
+
+#intro .widget .btn-default:hover {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#intro .form-control {
+	background-color: #e7b701;
+	border: none;
+	border-radius: 0px;
+	width: 250px;
+	color: #000;
+}
+
+#intro .result {
+	margin-top: 20px;
+}
+
+#intro .holdingslide {
+	/*display: none;*/
+}
+
+#intro .holdingslide img {
+	width: 100%;
+	height: auto;
+}
+
+#intro .resultslide {
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size:contain;
+	min-height: 340px;
+	padding-top: 1.5em;
+}
+
+
+#intro .resultslide .messagetext {
+padding-right: 30px;
+}
+
+#intro .resultslide .messagetext .timetotal {
+	font-size: 0.7em;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+#intro .resultslide .messagetext .message {
+	font-size: 0.7em;
+}
+
+#intro .resultslide.slide1,
+#intro .resultslide.slide7,
+#intro .resultslide.slide8 {
+	color: #fff !important;
+	
+}
+
+#intro .resultslide.slide1 .timetotal,
+#intro .resultslide.slide7 .timetotal,
+#intro .resultslide.slide8 .timetotal {
+	/*color: #43b8bd !important;*/
+	color: #fff !important;
+	
+}
+
+#intro .resultslide.slide2,
+#intro .resultslide.slide3,
+#intro .resultslide.slide4,
+#intro .resultslide.slide5,
+#intro .resultslide.slide6 {
+	color: #000 !important;
+	
+}
+
+#intro .resultslide.slide2 .timetotal,
+#intro .resultslide.slide3 .timetotal,
+#intro .resultslide.slide4 .timetotal,
+#intro .resultslide.slide5 .timetotal,
+#intro .resultslide.slide6 .timetotal {
+	color: #fff !important;
+	
+}
+
+#intro .progressResults {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+/* widget totaliser */
+
+.wrapper {
+	padding: 50px 20px 0 20px;
+}
+
+		.totalcontainer {
+	/*width: 500px;*/
+	height: 23px;
+background-image: url(../images/widget_total_empty.png);
+			background-size: contain;
+    background-repeat: no-repeat;
+	}
+	
+	
+ .total-text {
+		width: 49%;
+	float: left;
+	text-align: right;
+	padding-top: 22px;
+}
+
+.total-text p {
+margin-bottom: 0px;
+}
+
+.total-amount {
+		width: 49%;
+	float: left;
+	padding-left: 10px;
+	padding-top: 6px;
+}
+
+.total-amount {
+	font-weight: normal;
+	font-size: 14px;	
+		color: #ffde00;	
+}
+
+.total-amount {
+	color: #ffde00;
+	font-size: 30px;
+	margin-top: 2px;
+	font-weight: bold;
+}
+
+
+
+.total-bar {
+	clear: both;
+height: 23px;
+/*width: 0;
+width: 30%;*/
+margin-top: 17px;
+	background-image: url(../images/widget_total_full.png);
+    background-repeat: no-repeat;
+}
+
+
+
+.goals {
+	width: 100%;
+}
+
+.totalstart {
+	float: left;
+	width: 49%;
+	font-size: 0.8em;
+	color: #000;
+}
+
+.totalgoal {
+		float: right;
+	width: 49%;
+	font-weight: bold;
+	text-align: right;
+	font-size: 0.8em;
+	color: #000;
+}
+
+
+/* ===================
+    josh
+======================*/
+
+#josh {
+	
+}
+
+#josh .text {
+	background-color: transparent;
+}
+
+#josh .pic {
+	background-image: url(../images/josh_photo.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	min-height: 450px;
+}
+
+#josh ul {
+	padding-left: 0px;
+	margin-top: 30px;
+}
+
+#josh ul li {
+	float: left;
+	margin-right: 30px;
+	list-style-type: none;
+}
+
+#josh .btn-default i {
+	margin-right: 10px;
+}
+
+
+
+/* ===================
+    what is cystic fibrosis
+======================*/
+
+
+#whatiscf {
+	background-color: #16335a;
+	color: #fff;
+	padding-bottom: 40px;
+}
+
+#whatiscf .image {
+	text-align: center;
+}
+
+#whatiscf .image img {
+	width: 80px;
+	height: auto;
+}
+
+#whatiscf a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+#whatiscf h2 {
+margin-bottom: 0px;
+}
+
+
+
+/* ===================
+    leaderboards and supporters
+======================*/
+
+
+#leaderssupporters {
+	
+}
+
+.leaderboard .raised,
+.leaderboard .time {
+	background-color: #fff;
+	padding: 15px;
+}
+
+
+
+
+/* leaderboards */
+
+.leaderboard {
+	background-color: #ffce16;
+    padding-bottom: 21px;
+}
+
+.leaderboard .raised,
+.leaderboard .time {
+	background-color: #fff;
+	padding: 15px 0;
+}
+
+.leaderboard .raised .iconbox {
+	background-color: #43b8bd;
+	text-align: center;
+	padding: 20px;
+}
+
+.leaderboard .raised .iconbox img,
+.leaderboard .time .iconbox img,
+.leaderboard .photo img {
+width: 100%;
+height: auto;
+}
+
+.leaderboard .time {
+margin-top: 40px;
+}
+
+.leaderboard .time .iconbox {
+	background-color: #16335a;
+	text-align: center;
+	padding: 20px;
+}
+
+
+.leaderboard .name a {
+font-size: 0.7em;
+	text-decoration: underline;
+	color: #000;
+}
+
+.leaderboard .raisedamount {
+color: #16335a;
+	font-weight: bold;
+}
+
+
+/* supporter wall */
+
+.supporterwall {
+	background-color: #ffce16;
+	    padding-top: 63px;
+}
+
+.wall {
+	
+}
+
+.supporterwall .btn-default {
+		background-image: url(../images/intro_buttontransp.png);
+	line-height: 2.7em;
+    font-size: 1em;
+	color: #000;
+}
+
+.supporterwall .btn-default:hover {
+    color: #000;
+	background-color: transparent;
+	border: none;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+/* transition */
+
+.imagechange-3d-inner {
+	/*position:absolute;*/
+	top:0px;right:0px;bottom:0px;left:0px}
+
+.imagechange-3d .imgchange-1 {
+	opacity:1;
+margin-bottom: 30px;
+}
+
+.imgchange-1 img {
+	width: 100%;
+	height: auto;
+}
+
+.imagechange-3d:hover .imgchange-1 {opacity:0}
+.imagechange-3d .imgchange-2 {opacity:0}
+.imagechange-3d:hover .imgchange-2 {opacity:1}
+
+.imgchange-1 {
+	/*position:absolute;*/
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px
+}
+
+.imgchange-2 {
+	position:absolute;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	padding:10px;
+	color:#fff;
+	background:#16335a;
+height: 103px;
+	}
+
+.imgchange-2 a {
+	color:#fff;
+text-decoration: underline;
+	font-size: 0.6em;
+	cursor:pointer;
+	}
+
+.imgchange-2 .name {
+
+}
+
+.imgchange-2 .raisedamount {
+	color: #ffce16;
+	font-size: 0.8em;
+}
+
+.imgchange-2 .time {
+	color: #69c6ca;
+	font-size: 0.6em;
+}
+
+
+
+.imagechange-3d div 
+{
+transition:all 0.5s ease-in-out;
+-webkit-transition:all 0.5s ease-in-out;
+-moz-transition:all 0.5s ease-in-out;
+-ms-transition:all 0.5s ease-in-out;
+-o-transition:all 0.5s ease-in-out;
+}
+
+.imagechange-3d 
+{
+perspective:1000px;
+-webkit-perspective:1000px;
+-moz-perspective:1000px;
+-ms-perspective:1000px;
+-o-perspective:1000px;
+}
+
+.imagechange-3d-inner 
+{
+transform-style:preserve-3d;
+transition:all 1.0s linear;
+-webkit-transform-style:preserve-3d;
+-webkit-transition:all 1.0s linear;
+-moz-transform-style:preserve-3d;
+-moz-transition:all 1.0s linear;
+-ms-transform-style:preserve-3d;
+-ms-transition:all 1.0s linear;
+-o-transform-style:preserve-3d;
+-o-transition:all 1.0s linear;
+}
+
+.imagechange-3d:hover .imagechange-3d-inner 
+{
+transform:rotateY(180deg);
+-webkit-transform:rotateY(180deg);
+-moz-transform:rotateY(180deg);
+-ms-transform:rotateY(180deg);
+-o-transform:rotateY(180deg);
+}
+
+.imgchange-2 
+{
+transform:rotateY(180deg);
+-webkit-transform:rotateY(180deg);
+-moz-transform:rotateY(180deg);
+-ms-transform:rotateY(180deg);
+-o-transform:rotateY(180deg);
+}
+
+
+/* ===================
+    footer
+======================*/
+
+.footertop {
+	background-image: url(../images/footer_top.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+height: 146px;	
+	margin-top: -80px;
+}
+
+ul.links {
+	text-align:center;
+}
+.footer {
+	background-color: #000;
+	color: #fff;
+	font-size: 0.8em;
+	padding-bottom: 100px;
+}
+
+.footer .container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.footer ul {
+padding-left: 0px;
+}
+
+.footer li {
+	list-style-type: none;
+	float: left;
+}
+
+.footer .links ul {
+padding-left: 55px;
+}
+
+.footer .links li {
+margin-right: 50px;
+}
+
+.footer li a {
+color: #fff;
+}
+
+.footer .social {
+	margin-top: 30px;
+}
+
+.footer .social li a {
+	border: 1px solid #fff;
+	padding: 10px;
+}
+
+.footer .social li a:hover {
+background-color: #43b8bd;
+}
+
+.links {
+	margin: 20px 0;
+}
+
+.charity {
+	padding-left: 70px;
+}
+
+.charity p {
+	font-size: 0.7em;
+}
+
+
+
+/* ===================
+    about page
+======================*/
+
+
+
+/* ===================
+    faq page
+======================*/
+
+
+
+
+
+/* ===================
+    thank you page
+======================*/
+
+#thankyou .navbar-header button,
+#thankyou #navbar,
+#thankyou .jumbotron p {
+	display: none !important;
+}
+
+#thankyou .jumbotron {
+margin-top: 0px;
+}
+
+#thankyou .navbar {
+    min-height: 170px;
+}
+
+#thankyou .jumbotron .container {
+    padding: 40px 0;
+}
+
+#thankyou #sitecontent .container {
+    width: 75%;
+}
+
+#thankyou footer .charity {
+padding: 20px 0 0 90px;
+}
+
+#thankyou footer .charity a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+#thankyou h2 {
+    font-size: 48px;
+    text-align: center;
+}
+
+#thankyou ul {
+	padding-left: 0px;
+	margin-top: 30px;
+}
+
+#thankyou ul li {
+	float: left;
+	margin-right: 30px;
+	list-style-type: none;
+}
+
+#thankyou .btn-default i {
+	margin-right: 10px;
+}
+
+
+
+/* ===================
+    responsiveness
+======================*/
+
+
+
+ 
+
+ @media(max-width:400px) {
+
+#intro .boxcontainer .register,
+#intro .boxcontainer .active,
+#intro .boxcontainer .log,
+#intro .boxcontainer .fundraise {
+width: 100%;		 
+}
+
+.totalcontainer {
+    margin-top: 20px !important;
+}
+
+	 
+
+ }
+
+ /* iphone horizontal */
+ @media(min-width:401px) and (max-width:765px) {
+
+.navbar-brand img {
+    width: 60%;
+    height: auto;
+}
+
+	 #intro .resultslide .messagetext {
+		 font-size: 1.4em;
+	 }
+ 
+	 #intro .resultslide {
+		 background-size: auto;
+		 width: 370px;
+	 }
+	 
+	 
+
+ }
+
+
+
+
+
+
+ @media(max-width:767px) {
+
+.navbar-inverse .navbar-toggle {
+    border-color: #fff;
+}
+	 
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #aaa;
+}
+	 
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+	 
+.navbar {
+min-height: 110px;
+}
+	 #navbar ul {
+    margin-top: 20px;
+}
+	
+#navbar ul li {
+    float: none;
+    margin-right: 20px;
+}
+	 
+.navbar-inverse .navbar-brand {
+    width: 80%;
+} 
+	
+#intro {
+    margin-top: 20px;
+}	 
+	 
+#intro .boxcontainer .fundraise .text {
+    width: 60%;
+}	 
+	 
+#intro .actionbuttons {
+    text-align: center;
+}	 
+	 
+#intro .widget {
+    background-image: none;
+}	 
+	 
+.form-group {
+    float: left;
+}	 
+	 
+#intro .resultslide {
+background-size: cover;
+}
+	 
+.padding {
+    padding: 10px 20px;
+}
+	 
+#intro .resultslide .messagetext {
+    padding-right: 30px;
+    width: 50%;
+    float: right;
+    font-size: 1.1em;
+}
+	 
+.totalcontainer {
+    margin-top: 50px;
+}
+	 
+	 .jumbotron {
+		 margin-top: 60px;
+	 }
+	 
+#josh .pic {
+clear: both;
+	border-top: 30px solid #fff;
+}
+	 
+#whatiscf .image {
+display: none;
+}	 
+	 
+.leaderboard .raised, .leaderboard .time {
+    margin: 20px;
+} 
+	 
+.leaderboard .raisedamount {
+    margin-bottom: 50px;
+	font-size: 1.3em;
+}
+	 
+.leaderboard .name a {
+font-size: 1em;
+} 
+
+.leaderboard .raised .iconbox img, .leaderboard .time .iconbox img {
+width: 30%;
+height: auto;
+} 
+	 
+.footer .social {
+margin-left: 20px;
+}	 
+	 
+.footer .links ul {
+    padding-left: 20px;
+}
+	 
+.charity {
+    padding-left: 35px;
+	margin-top: 20px;
+}
+	 
+	 .charity a {
+color: #fff;
+}
+	 
+.footer {
+    padding-bottom: 40px;
+}
+	 
+	 
+	 
+/* thank you page */
+	 
+	 #thankyou .jumbotron {
+margin-top: 0px;
+}
+
+#thankyou .navbar {
+    min-height: 100px;
+}
+
+#thankyou .jumbotron .container {
+    padding: 40px 0;
+}
+
+#thankyou #sitecontent .container {
+    width: 100%;
+}
+
+#thankyou footer .charity {
+padding: 20px 0 0 90px;
+}
+
+#thankyou h2 {
+    font-size: 30px;
+}
+	 #thankyou ul li {
+margin-bottom: 20px;
+}
+	 
+
+ }
+
+
+/*ipad vertical */
+ @media(min-width:768px) and (max-width:992px) {
+
+	 
+
+
+
+	 
+
+ }
+
+
+
+
+
+
+
+
+
+ @media(max-width:400px) {
+
+	 
+
+
+
+	 
+
+ }
+
+ 
+
+ @media(max-width:1024px) {
+
+
+
+
+
+ 
+
+  }
+
+ 
+
+
+ 
+/* ipad horizontal */
+ @media(min-width:768px) and (max-width:1199px) {
+
+	#navbar ul li a.mainbuttonorange,
+	 #navbar ul li a.mainbutton {
+		 width: 150px;
+		 background-size: cover;
+		 padding: 10px;
+		 font-size: 0.8em;
+		 height: 50px;
+	 }
+
+.navbar-brand img {
+    width: 50%;
+    height: auto;
+}
+	 
+	 .container {
+    width: 100%;
+}
+	 
+	 .navbar {
+    min-height: 120px;
+}
+	 
+	 	#thankyou .navbar {
+    
+}
+	 
+	 #thankyou .navbar-brand img {
+    width: 80%;
+    height: auto;
+}
+	 
+	 #navbar a i.fa {
+    font-size: 2em;
+}
+
+#navbar ul {
+margin-top: 0px;
+}
+
+	 .jumbotron {
+    margin-top: 70px;
+}
+	 
+	 #intro {
+		 border-top: 20px solid #fff;
+	 }
+
+	 #intro .text,
+	 #intro .actions {
+    width: 100%;
+}
+	 
+	 #intro .resultslide {
+		 background-size: cover;
+	 }
+	 
+	 #intro .resultslide .total {
+		     margin-top: 100px;
+    padding-bottom: 90px;
+	 }
+	 
+	 #josh .text {
+    width: 75%;
+}
+	 
+	 #josh .pic {
+    width: 25%;
+}
+	 
+#josh ul li {
+    margin-right: 10px;
+}
+	 
+	 #josh .btn-default {
+		 width: 220px;
+		 line-height: 2.1em;
+	 }
+	 
+	 .leaderboard {
+		 width: 100%;
+	 } 
+	 
+	 .supporterwall {
+		 padding-top: 0px;
+	 }
+	 
+	 #totals .raisedamount, #totals .timeamount, #totals .participantsamount {
+		 font-size: 1.5em;
+		 
+	 }
+	 
+
+ }
+
+ 
+/* ipad vertical */
+
+ @media(min-width:768px) and (max-width:992px) {
+
+.navbar-brand img {
+    width: 35%;
+    height: auto;
+}
+	 
+	#intro .actionbuttons,
+	 #intro .widget {
+		 width: 50%;
+		 float: left;
+} 
+	 
+	 #josh .pic {
+		 display: none;
+	 }
+	 
+	 	 #josh .text {
+		 width: 100%;
+			 margin-bottom: 60px;
+	 }
+	 
+	 #whatiscf .image {
+display: none;
+}
+	 
+	 .logo img {
+    width: auto; 
+    height: auto;
+}
+	
+	 .leaderboard .col-md-2 {
+		 width: 16%;
+		 float: left;
+	 }
+	 
+	 .leaderboard .time {
+		 margin-top: 0px;
+	 }
+	 
+	 
+	 
+}
+
+
+
+ @media(min-width:992px) and (max-width:1024px) {
+
+
+
+ 
+
+ }
+
+ 
+
+ @media(min-width:1024px) and (max-width:1199px) {
+
+
+
+ }
+
+
+
+ @media(min-width:1200px) {
+
+.container {
+    width: 100%;
+}
+ 
+ 
+
+ }
+
+
+
+
+
+
