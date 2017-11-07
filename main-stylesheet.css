@@ -566,13 +566,22 @@ a.profile {
 	margin-bottom:40px;
 }
  @media(max-width:1000px) {
+	 .badge-box {
+margin: 5px;
+}
+	 .logo img {
+    width: 60%;
+}
+	 .VLM {
+    width: 100%;
+}
 	#intro {
     flex-wrap:wrap;
 } 
 	 .VLM h2 {
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
     margin-top: 0px;
-		 font-size:24px;
+		 font-size:22px;
 }
 	 .cloud img {
 		 width: 90%;
