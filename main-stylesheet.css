@@ -176,17 +176,20 @@ h4 {
 }
 .navbar-header {
     display: flex;
-    justify-content: center;
-    min-height: 160px;
-	width:70%;
+justify-content: center;
+min-height: 160px;
+width: 65%;
 }
 .container.nav {
 	display: flex;
 	justify-content: space-between;
 }
 #navbar {
-width:30%;
-	align-self: center;
+width: 35%;
+align-self: center;
+margin-right: auto;
+margin-left: auto;
+text-align: center;
 }
 .logo {
 	width:30%;
@@ -213,7 +216,7 @@ min-height: 160px;
 
 #navbar ul li {
 	list-style-type: none;
-	margin-right: 20px;
+	margin-right: 0px;
 	display: inline-block;
 }
 
